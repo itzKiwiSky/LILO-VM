@@ -1,0 +1,19 @@
+lilo
+    - system
+        - setOrientation(mode:String) -> Boolean
+        - vibrate(direction:String, strength:Float) -> Boolean
+        - getSystem() -> String
+        - setControllerType()
+    - graphics
+        - rect(mode:String, x:Int, y:Int, w:Int, h:Int)
+    - input
+        - keyboard
+            - isKeyPressed(key:String)  -> Boolean
+            - isScancodePressed(code:Int)   -> Boolean
+        - joystick
+            - buttonPressed(btn:String)
+            - getAxis(axis:String)
+            - getPlayerCount()  -> Int
+        - virtualpad
+            - buttonPressed(btn:String)
+            - getAxis(axis:String)
