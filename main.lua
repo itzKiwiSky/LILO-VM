@@ -20,12 +20,16 @@ function love.initialize(args)
     ---------------------
 
     LILO - Cartdrigde mapping (64KB)
+    ---------------------
+    ---------------------
+
+    LILO - Sprite queue mapping
+    ---------------------
+    64 Bytes colors
+    2 Bytes Position X, Y
+    1 Byte visible
     ]]--
 
-    ram:allocate("vb", 0x0, 0xDC00)  -- video buffer --
-    ram:allocate("ioq", 0xDC01, 0xDC21)     -- io queue --
-    ram:allocate("audctrl", 0xDC22, 0xDD22)     -- audio controller queue --
-    ram:allocate("objqueue", 0xDD23, 0xE363)    -- Object render queue --
 
 
     screenController.initialize()

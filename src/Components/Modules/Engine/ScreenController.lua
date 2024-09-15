@@ -14,6 +14,7 @@ end
 function ScreenController.initialize()
     screenController.render = render()
     screenController.virtualpad = virtualpad()
+    render:drawCall()
 end
 
 function ScreenController.draw()
